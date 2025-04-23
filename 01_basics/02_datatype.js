@@ -1,8 +1,8 @@
 "use strict";  // treat all js code as newer version
 
 // alert("hello")  //we ar using node.js ,not browser
-console.log(2+4)
-console.log("Prabir")
+// console.log(2+4)
+// console.log("Prabir")
 
 
 let name = "Prabir" //string datatype
@@ -38,10 +38,10 @@ const sc = 100.4
 const Id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(Id == anotherId)
+// console.log(Id == anotherId)
 
 const bigNumber = 488882348486272734848449493n
-console.log(typeof bigNumber)
+// console.log(typeof bigNumber)
 
 //Array
 const heroes = ['shaktiman','nagaraj','doga'];
@@ -55,6 +55,24 @@ let myObj = {
 const myFunc = function(){
     console.log("Prabir")
 }
-console.log(myFunc())
+// console.log(myFunc())
 
-console.log(typeof myFunc)
+// console.log(typeof myFunc)
+
+//*************** Memory *******************
+// stack(primitive) and heap(non-primitive)
+let ytName = 'funny_video.com'
+let anotherName = ytName
+anotherName = 'chaiCode'
+// console.log(ytName)
+// console.log(anotherName)
+
+let user1 = {
+    email:'user@google.com',
+    upi:'xyz@okaxis'
+}
+
+let user2 = user1
+user2.email = 'prabir@gmail.com'
+console.log(user1.email)
+console.log(user2.email)
