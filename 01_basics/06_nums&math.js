@@ -37,3 +37,5 @@ const min = 10
 const max = 20
 console.log(Math.floor(Math.random()*(min-max+1))+min)
 console.log((Math.random((min,max)))+min)
+
+console.log(Math.round(3.4552))
